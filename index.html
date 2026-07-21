@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RiseSphere | Home</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f8fb;
+}
+
+/* Navigation */
+
+nav{
+    background:#003366;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:17px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#00d4ff;
+}
+
+/* Hero */
+
+.hero{
+    height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(rgba(0,51,102,.7),rgba(0,51,102,.7)),url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+    color:white;
+    text-align:center;
+}
+
+.hero-content{
+    width:70%;
+}
+
+.hero h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:32px;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    padding:14px 35px;
+    background:#00bfff;
+    color:white;
+    text-decoration:none;
+    border-radius:30px;
+    margin:10px;
+    display:inline-block;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    color:#003366;
+}
+
+/* About */
+
+.about{
+    padding:70px;
+    text-align:center;
+}
+
+.about h2{
+    color:#003366;
+    margin-bottom:20px;
+}
+
+.about p{
+    font-size:18px;
+    line-height:30px;
+    color:#555;
+}
+
+/* Features */
+
+.features{
+    background:white;
+    padding:60px;
+}
+
+.features h2{
+    text-align:center;
+    color:#003366;
+    margin-bottom:40px;
+}
+
+.feature-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#eef7ff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#444;
+    line-height:25px;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+    </style>
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+RiseSphere
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>RiseSphere</h1>
+
+<h2>AI-Enabled Smart Student Management Portal</h2>
+
+<p>
+
+Manage attendance, assignments, marks, study materials,
+fee details, academic performance, career readiness,
+AI study planner and much more in one smart platform.
+
+</p>
+
+<div class="buttons">
+
+<a href="register.html" class="btn">Register</a>
+
+<a href="login.html" class="btn">Login</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>About RiseSphere</h2>
+
+<p>
+
+RiseSphere is an AI-powered Student Management Portal
+developed to simplify academic and administrative activities.
+It provides a centralized platform where students,
+faculty, parents and administrators can access important
+academic information anytime and anywhere.
+
+</p>
+
+</section>
+
+<section class="features">
+
+<h2>Our Smart Features</h2>
+
+<div class="feature-container">
+
+<div class="card">
+<h3>Attendance Analytics</h3>
+<p>
+Track subject-wise attendance with smart analytics
+and attendance prediction.
+</p>
+</div>
+
+<div class="card">
+<h3>Assignment Tracker</h3>
+<p>
+View weekly assignments, due dates,
+submission status and faculty feedback.
+</p>
+</div>
+
+<div class="card">
+<h3>AI Study Planner</h3>
+<p>
+Generate personalized study schedules
+based on examination dates.
+</p>
+</div>
+
+<div class="card">
+<h3>Academic Dashboard</h3>
+<p>
+Monitor semester GPA,
+internal marks and performance trends.
+</p>
+</div>
+
+<div class="card">
+<h3>Study Materials</h3>
+<p>
+Download lecture notes,
+PDFs and learning resources uploaded by faculty.
+</p>
+</div>
+
+<div class="card">
+<h3>Career Readiness</h3>
+<p>
+Track certifications,
+projects and placement preparation progress.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+© 2026 RiseSphere |
+AI-Enabled Smart Student Management Portal
+
+</p>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RiseSphere | Dashboard</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#eef3f8;
+}
+
+/* Navigation */
+
+nav{
+    background:#003366;
+    color:white;
+    padding:18px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    background:#00b4db;
+    padding:10px 20px;
+    border-radius:5px;
+}
+
+nav a:hover{
+    background:white;
+    color:#003366;
+}
+
+/* Welcome */
+
+.welcome{
+    padding:30px;
+    text-align:center;
+}
+
+.welcome h1{
+    color:#003366;
+}
+
+.welcome p{
+    color:#666;
+    margin-top:10px;
+}
+
+/* Dashboard Cards */
+
+.dashboard{
+    width:95%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+    padding-bottom:40px;
+}
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 5px 10px rgba(0,0,0,0.15);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card h3{
+    color:#003366;
+    margin-bottom:15px;
+}
+
+.card ul{
+    margin-left:20px;
+}
+
+.card li{
+    margin-bottom:10px;
+    color:#555;
+}
+
+/* Student Profile */
+
+.profile{
+    text-align:center;
+}
+
+.profile img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-bottom:15px;
+}
+
+.profile h3{
+    color:#003366;
+}
+
+.profile p{
+    margin:6px;
+    color:#555;
+}
+
+/* Footer */
+
+footer{
+    background:#003366;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h2>RiseSphere Dashboard</h2>
+
+<a href="index.html">Logout</a>
+
+</nav>
+
+<div class="welcome">
+
+<h1>Welcome, Sharmila 👋</h1>
+
+<p>AI-Enabled Smart Student Management Portal</p>
+
+</div>
+
+<div class="dashboard">
+
+<div class="card profile">
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+<h3>Student Profile</h3>
+
+<p><strong>Name:</strong> Sharmila M</p>
+
+<p><strong>Register No:</strong> RCAS2025BCA227</p>
+
+<p><strong>Department:</strong> BCA AI</p>
+
+<p><strong>Year:</strong> II Year</p>
+
+</div>
+
+<div class="card">
+
+<h3>Attendance</h3>
+
+<ul>
+<li>Python - 95%</li>
+<li>Java - 90%</li>
+<li>Web Development - 98%</li>
+<li>Database - 93%</li>
+<li>Overall Attendance - 94%</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Internal Marks</h3>
+
+<ul>
+<li>Python - 92</li>
+<li>Java - 88</li>
+<li>HTML & CSS - 95</li>
+<li>Database - 90</li>
+<li>AI Fundamentals - 91</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Weekly Assignments</h3>
+
+<ul>
+<li>✔ HTML Homepage</li>
+<li>✔ Register Page</li>
+<li>⏳ Dashboard Design</li>
+<li>✔ Python Practice</li>
+<li>📅 Database Task - Friday</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Study Materials</h3>
+
+<ul>
+<li>Python Notes.pdf</li>
+<li>HTML Guide.pdf</li>
+<li>CSS Notes.pdf</li>
+<li>Java Programming.pdf</li>
+<li>MongoDB Notes.pdf</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Upcoming Exams</h3>
+
+<ul>
+<li>Python - 25 Aug</li>
+<li>Java - 28 Aug</li>
+<li>Web Development - 31 Aug</li>
+<li>Database - 3 Sept</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Semester GPA</h3>
+
+<ul>
+<li>Semester 1 GPA : 8.9</li>
+<li>Current GPA : 9.1</li>
+<li>Overall CGPA : 9.0</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Fee Status</h3>
+
+<ul>
+<li>Total Fee : ₹50,000</li>
+<li>Paid : ₹50,000</li>
+<li>Status : ✅ Paid</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Today's Timetable</h3>
+
+<ul>
+<li>9.00 - Python</li>
+<li>10.30 - Java</li>
+<li>12.00 - HTML & CSS</li>
+<li>2.00 - MongoDB</li>
+<li>3.30 - Lab</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>AI Study Planner</h3>
+
+<ul>
+<li>Python - 2 Hours</li>
+<li>Java - 1 Hour</li>
+<li>HTML - 1 Hour</li>
+<li>Database - 1 Hour</li>
+<li>Revision - 30 mins</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Career Readiness Score</h3>
+
+<ul>
+<li>Attendance ⭐⭐⭐⭐⭐</li>
+<li>Projects ⭐⭐⭐⭐☆</li>
+<li>Skills ⭐⭐⭐⭐⭐</li>
+<li>Internship ⭐⭐⭐⭐☆</li>
+<li><strong>Overall : 91%</strong></li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>Latest Notifications</h3>
+
+<ul>
+<li>📢 Web Development Project Submission</li>
+<li>📢 Internal Exam Timetable Released</li>
+<li>📢 Placement Training Registration</li>
+<li>📢 AI Workshop on Saturday</li>
+</ul>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 RiseSphere | AI-Enabled Smart Student Management Portal
+
+</p>
+
+</footer>
+
+</body>
+</html>
